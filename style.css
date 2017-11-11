@@ -14,7 +14,7 @@ a:link {
 }
 
 .header {
-    background: #673AB7;
+    background: #9C27B0;
     height: 50px;
     flex: 100%;
     position: fixed;
@@ -100,7 +100,7 @@ a.active_page {
 .author-box {
     padding: 20px 3.8%;
     min-height: 180px;
-    background-color: #222;
+    background-color: rgb(39, 38, 39);
     clear: both;
     flex: 100%;
     color: white;
@@ -115,7 +115,7 @@ a.active_page {
     margin: 0;
     line-height: 24px;
     margin-top: 20px;
-    color: #00e2ff;
+    color: #d038ea;
     text-transform: capitalize;
 }
 
@@ -125,7 +125,7 @@ a.active_page {
     height: 100px;
     display: block;
     position: relative;
-    border-radius: 100%;
+    border-radius: 5px;
     float: left;
     margin-right: 15px;
 }
@@ -211,3 +211,5 @@ footer {
     border-radius: 10px;
     margin-bottom: 10px;
 }
+
+/* Device Breakpoints for Responsivity */
