@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Muli');
 * {
     font-family: 'Muli', sans-serif !important;
     line-height: normal !important;
@@ -20,18 +21,28 @@ a:link {
     left: 0;
     right: 0;
     top: 0;
-    display: block;
+    display: flex;
     box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .01);
     padding: 5px 15px;
     z-index: 9000;
+    flex-direction: row;
+    justify-content: normal;
 }
 
-.logo-text {
+
+/* .logo-text {
     padding: 10px 0;
     text-align: center;
     font-size: 20px;
     width: 200px;
     display: inline-flex;
+} */
+
+.logo-text {
+    padding: 10px 0;
+    text-align: center;
+    font-size: 20px;
+    flex: 1;
 }
 
 span.justice {
@@ -42,16 +53,27 @@ span.nefe {
     color: #ffe60c;
 }
 
-.menu {
+
+/* .menu {
     display: inline-flex;
+} */
+
+.menu {
+    flex: 2;
+}
+
+.right {
+    flex: 1;
 }
 
 .menu ul {
     list-style: none;
-    display: inline-block;
+    display: flex;
     padding: 0;
     margin: 0;
     border-radius: 10px;
+    flex-direction: row;
+    align-items: center;
 }
 
 .menu ul li {
@@ -63,7 +85,6 @@ span.nefe {
     display: inline-block;
     padding: 10px;
     border-radius: 10px;
-    /* background: red; */
     color: white;
 }
 
@@ -77,11 +98,9 @@ a.active_page {
 }
 
 .author-box {
-    /* margin: 0 0 30px -6.8%; */
     padding: 20px 3.8%;
     min-height: 180px;
     background-color: #222;
-    /* float: left; */
     clear: both;
     flex: 100%;
     color: white;
@@ -94,14 +113,14 @@ a.active_page {
     display: block;
     padding: 0;
     margin: 0;
-    /* float: left; */
     line-height: 24px;
     margin-top: 20px;
     color: #00e2ff;
     text-transform: capitalize;
 }
 
-.author-image, .small {
+.author-image,
+.small {
     width: 100px;
     height: 100px;
     display: block;
@@ -118,11 +137,11 @@ a.active_page {
 
 .column {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding: 5px;
     align-items: center;
+    flex: 4;
 }
-
 
 main {
     top: 50px;
@@ -149,14 +168,17 @@ article {
 .article-content-intro {
     display: flex;
 }
+
 .book-cover {
     height: 300px;
     flex: 1;
     margin-right: 10px;
 }
-.side-summary{
-    flex: 2;
+
+.side-summary {
+    flex: 3;
 }
+
 aside {
     flex: 1;
     position: relative;
@@ -179,9 +201,11 @@ footer {
     text-align: center;
     font-weight: 700;
 }
+
 .summary-items ol li {
     margin-bottom: 5px;
 }
+
 #youtube-cartoon {
     width: 100% !important;
     border-radius: 10px;
