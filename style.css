@@ -44,9 +44,6 @@ span.nefe {
 
 .menu {
     display: inline-flex;
-    /* background: #6734ba; */
-    /* padding: 5px; */
-    /* border-radius: 0px 0px 15px 15px; */
 }
 
 .menu ul {
@@ -104,7 +101,7 @@ a.active_page {
     text-transform: capitalize;
 }
 
-.author-image {
+.author-image, .small {
     width: 100px;
     height: 100px;
     display: block;
@@ -113,23 +110,6 @@ a.active_page {
     float: left;
     margin-right: 15px;
 }
-
-
-/* aside { */
-
-
-/* float: right; */
-
-
-/* position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    height: 100%;
-    background: black;
-    color: white;
-    width: 400px;
-} */
 
 .container {
     display: flex;
@@ -143,12 +123,6 @@ a.active_page {
     align-items: center;
 }
 
-#content {
-    /* position: relative; */
-    /* top: 50px; */
-    /* padding: 10px; */
-    /* flex: 100%; */
-}
 
 main {
     top: 50px;
@@ -169,12 +143,25 @@ article {
 
 #twitter-widget-0 {
     width: 100% !important;
-    /* display: flex !important; */
     margin-bottom: 10px !important;
 }
 
+.article-content-intro {
+    display: flex;
+}
+.book-cover {
+    height: 300px;
+    flex: 1;
+    margin-right: 10px;
+}
+.side-summary{
+    flex: 2;
+}
 aside {
-    flex: 1
+    flex: 1;
+    position: relative;
+    bottom: 55px;
+    border-radius: 10px;
 }
 
 footer {
@@ -186,6 +173,17 @@ footer {
     text-align: center;
     flex-direction: column;
     justify-content: center;
-    /* flex: 100%; */
-    /* align-self: end; */
+}
+
+.nutshell {
+    text-align: center;
+    font-weight: 700;
+}
+.summary-items ol li {
+    margin-bottom: 5px;
+}
+#youtube-cartoon {
+    width: 100% !important;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }

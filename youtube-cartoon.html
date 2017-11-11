@@ -5,20 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Justice Nefe's Landing Page</title>
-    <link href="/assets/css/holberton.css" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="/assets/css/bootstrap.min.css"> -->
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>Youtube Explainer Cartoon on The Psychology / Science of Persuasion</title>
+    <link href="/holberton.css" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
 </head>
 
 <body>
     <header class="header">
         <div class="container">
             <div class="column">
-                <div class="logo-text">
+                <a href="/index.html" class="logo-text">
                     <span class="justice">Justice</span>
                     <span class="nefe">Nefe</span>
-                </div>
+                </a>
                 <div class="menu" align="center">
                     <div class="menu-links">
                         <ul>
@@ -44,47 +43,28 @@
     <main id="content">
         <article>
             <div class="article-contents">
-                <h1>Here, I'm gonna be summarizing the book on the Psychology of Persuasion</h1>
-                <p>
-                    <em>This Project is one out of the admission process into
-                        <a href="https://www.holbertonschool.com" target="_blank">Holberton School for Software Engineers.</a>
-                        <br> It was created to test our skills on how we follow tutorials and instructions. Given free will but
-                        strict rules.
+                <h1>I have included a cartoon explainer video on the Science of Persuasion</h1>
+                <iframe id="youtube-cartoon" width="560" height="415" src="https://www.youtube.com/embed/cFdCzN7RYbw?rel=0" frameborder="0"
+                    allowfullscreen></iframe>
+                <p>Feel Free To Drop Your Comments in the comment box on the right... Feedbacks are welcomed
+                </p>
 
-                    </em>
-                    <blockquote>
-                        <em>"A kite needs to be tied down in order to fly. I learned how important restrictions can sometimes
-                            be in order to experience freedom." ~
-                            <strong>Damien Rice</strong>
-                        </em>
-                    </blockquote>
-                </p>
-                <p>It Entails Building Me Building My First Website.</p>
-            </div>
-            <hr>
-            <div class="article-contents">
-                <h2>Content of This Project</h2>
-                <p>
-                    <ol>
-                        <li>About This Project</li>
-                        <li>Tweets</li>
-                        <li>The Psychology of Persuasion</li>
-                        <li>Youtube Cartoon</li>
-                    </ol>
-                </p>
             </div>
             <div class="author-box">
                 <h3>
                     About The Author
                 </h3>
-                <img class="author-image" src="/assets/img/justice.jpg">
+                <img id="smart_thumbnail" class="small" src="/assets/img/justice.jpg">
                 <h5 class="author-name">Justice Nefe</h5>
                 <p>I am a prospective student applying to Holberton School. </p>
             </div>
         </article>
         <aside>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum id nam consectetur distinctio molestiae quae quo eligendi,
-            voluptate suscipit tenetur cumque voluptatem. Iure ipsum minima reprehenderit rerum dolore molestiae accusantium?
+            <br>
+            <div id="disqus_thread"></div>
+            <noscript>Please enable JavaScript to view the
+                <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+            </noscript>
         </aside>
     </main>
 
@@ -96,9 +76,9 @@
             <a href="https://www.holbertonschool.com" target="_blank">Holberton School</a>.
         </p>
     </footer>
-    <script src="assets/js/script.js">
-        // My JavaScript File
-    </script>
+    <script src="/script.js"></script>
+    <script src="/behaviour.js"></script>
+    <script id="dsq-count-scr" src="//justice4holberton.disqus.com/count.js" async></script>
 </body>
 
 </html>

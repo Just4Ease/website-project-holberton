@@ -5,20 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Justice Nefe's Landing Page</title>
-    <link href="/assets/css/holberton.css" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="/assets/css/bootstrap.min.css"> -->
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>About this Project & Intro To The Psychology of Persuasion</title>
+    <link href="/holberton.css" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
 </head>
 
 <body>
     <header class="header">
         <div class="container">
             <div class="column">
-                <div class="logo-text">
+                <a href="/index.html" class="logo-text">
                     <span class="justice">Justice</span>
                     <span class="nefe">Nefe</span>
-                </div>
+                </a>
                 <div class="menu" align="center">
                     <div class="menu-links">
                         <ul>
@@ -41,7 +40,7 @@
             </div>
         </div>
     </header>
-    <main id="content">
+    <main>
         <article>
             <div class="article-contents">
                 <h1>About This Project</h1>
@@ -77,14 +76,17 @@
                 <h3>
                     About The Author
                 </h3>
-                <img class="author-image" src="/assets/img/justice.jpg">
+                <img id="smart_thumbnail" class="small" src="/assets/img/justice.jpg">
                 <h5 class="author-name">Justice Nefe</h5>
                 <p>I am a prospective student applying to Holberton School. </p>
             </div>
         </article>
         <aside>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum id nam consectetur distinctio molestiae quae quo eligendi,
-            voluptate suscipit tenetur cumque voluptatem. Iure ipsum minima reprehenderit rerum dolore molestiae accusantium?
+            <br>
+            <div id="disqus_thread"></div>
+            <noscript>Please enable JavaScript to view the
+                <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+            </noscript>
         </aside>
     </main>
 
@@ -96,9 +98,9 @@
             <a href="https://www.holbertonschool.com" target="_blank">Holberton School</a>.
         </p>
     </footer>
-    <script src="assets/js/script.js">
-        // My JavaScript File
-    </script>
+    <script src="/script.js"></script>
+    <script src="/behaviour.js"></script>
+    <script id="dsq-count-scr" src="//justice4holberton.disqus.com/count.js" async></script>
 </body>
 
 </html>
