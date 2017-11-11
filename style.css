@@ -38,6 +38,11 @@ a:link {
     display: inline-flex;
 } */
 
+.mobile-menu {
+    visibility: hidden;
+    display: none;
+}
+
 .logo-text {
     padding: 10px 0;
     text-align: center;
@@ -119,8 +124,13 @@ a.active_page {
     text-transform: capitalize;
 }
 
-.author-image,
-.small {
+#smart_thumbnail {
+    border-radius: 10px;
+    margin: 5px auto;
+    transition: all 200ms ease-in-out;
+    cursor: pointer;
+}
+.image-fun {
     width: 100px;
     height: 100px;
     display: block;
@@ -130,9 +140,14 @@ a.active_page {
     margin-right: 15px;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
+.small {
+    width: 100px;
+    height: 100px;
+    display: block;
+    position: relative;
+    border-radius: 5px;
+    float: left;
+    margin-right: 15px;
 }
 
 .column {
@@ -212,4 +227,67 @@ footer {
     margin-bottom: 10px;
 }
 
-/* Device Breakpoints for Responsivity */
+@media only screen and (max-width:667px) {
+    .logo-text {
+        flex: 2;
+        margin-left: -119px;
+        position: relative;
+        width: 103px;
+    }
+    #mobile-menu-icon {
+        font-size: 36px;
+        color: white;
+        padding: 0;
+        position: relative;
+        top: 105px;
+        left: 15px;
+    }
+    .mobile-menu {
+        visibility: visible;
+        display: flex;
+        flex-direction: column;
+    }
+    .menu {
+        display: none;
+    }
+    .mobile-menu ul li a {
+        display: block;
+        padding: 10px;
+        border-radius: 10px;
+        color: white;
+    }
+    .menu-links {
+        position: relative;
+        display: block;
+        flex-direction: row;
+        justify-content: center;
+        top: 100px;
+        background: #9d1cb2;
+        z-index: 135;
+        width: 205px;
+        padding-top: 15px;
+        padding-bottom: 10px;
+        border-radius: 0 0 10px 10px;
+    }
+    main {
+        flex-direction: column;
+    }
+    #twitter-widget-0 {
+        width: 100% !important;
+        margin-bottom: 10px !important;
+        height: 400px !important;
+    }
+    .book-cover {
+        height: 190px;
+        flex: 1;
+        margin-right: 10px;
+    }
+    article>h1:first-child {
+        margin-top: 0;
+        text-align: center;
+        font-size: 30px;
+    }
+    .isClosed {
+        visibility: hidden;
+    }
+}
